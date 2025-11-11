@@ -31,6 +31,21 @@ go run ./cmd/migration
 ```sh
 go run ./cmd/app
 ```
+## test locally:
+
+### Using docker:
+```bash
+docker build -t lockers . && docker run --rm -p 8080:8080 lockers
+```
+
+or 
+### use the runner file (builds tw + go):
+```bash
+./run.sh
+```
+
+
+
 
 Note: for auth cookie to work, go on your browser `http://127.0.0.1:8080`
 
