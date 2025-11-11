@@ -1,3 +1,4 @@
+
 # TODOs
 
 - [ ] Script to send locker expiry emails, a Go binary will run in as cron job
@@ -18,5 +19,8 @@
     - Form data `locker` should be sent, containing the locker ID (ie, `ELW 120`).
   - [x] Export: `GET /admin/api/export`
     - Exports the current `registration` table into a csv file, then self-email
-- [ ] Option to deregister locker/switch registered locker (optional)
-- [ ] Make low numbered lockers searchable without leading 0s (low priority)
+- [x] Option to deregister locker/switch registered locker (optional)
+- [x] Make low numbered lockers searchable without leading 0s (low priority)
+- [ ] add the lockers in the ECS building (if needed)
+    - add new column to  database (choose bldg)
+    - query ( db.Prepare = where locker.id like num and locker.id like building )
